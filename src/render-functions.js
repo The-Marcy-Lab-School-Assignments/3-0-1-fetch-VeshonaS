@@ -30,10 +30,27 @@ export const setupPageBasics = (parentEl) => {
     return { statusDiv, usersUl, postsUl, newUserForm, newUserDiv };
 };
 
-export const renderStatus = () => {
+export const renderStatus = (statusDiv,statusInfoObj ) => {
+  const h2 = document.createElement("h2")
+  const pTag = document.createElement('p')
+  h2.id = 'status-heading'
+  h2.textContent = `Info on - ${statusInfoObj.url}`
+  pTag.id = "status-code"
+  pTag.textContent = `Status code: ${statusInfoObj.status}, ${statusInfoObj.ok? "OK" : 'FAIL'}!`
+  statusDiv.append(h2, pTag )
 }
 
-export const renderUsers = () => {
+export const renderUsers = (userUl, users) => {
+  userUl.innerHTML = ''
+  for (let user of users ){
+    const li = document.createElement('li')
+    const button = document.createElement('button')
+    li.classList.add('user-card')
+    button.dataset.userId = user.id 
+    button.textContent = `Load ${user.username}'s posts`
+    li.append(button)
+    userUl.append(li)
+  }
 };
 
 export const renderPosts = () => {

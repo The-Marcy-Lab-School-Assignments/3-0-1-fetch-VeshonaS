@@ -7,10 +7,10 @@
       "ApTe4": 0
     },
     "Render Functions Tests": {
-      "ReFuTe1": 0,
-      "ReFuTe2": 0,
-      "ReFuTe3": 0,
-      "ReFuTe4": 0,
+      "ReFuTe1": 1,
+      "ReFuTe2": 1,
+      "ReFuTe3": 1,
+      "ReFuTe4": 1,
       "ReFuTe5": 0,
       "ReFuTe6": 0,
       "ReFuTe7": 0,
@@ -19,12 +19,12 @@
     "Fetch Function Tests": {
       "FeFuTe1": 1,
       "FeFuTe2": 1,
-      "FeFuTe3": 0,
-      "FeFuTe4": 0,
-      "FeFuTe5": 0,
-      "FeFuTe6": 0,
-      "FeFuTe7": 0,
-      "FeFuTe8": 0
+      "FeFuTe3": 1,
+      "FeFuTe4": 1,
+      "FeFuTe5": 1,
+      "FeFuTe6": 1,
+      "FeFuTe7": 1,
+      "FeFuTe8": 1
     }
   },
   "idToTestNameHash": {
@@ -73,8 +73,8 @@
   },
   "humanReadable": {
     "App Tests": "0/4",
-    "finalTestScore": "FINAL SCORE: 2/20",
-    "Render Functions Tests": "0/8",
-    "Fetch Function Tests": "2/8"
+    "finalTestScore": "FINAL SCORE: 12/20",
+    "Render Functions Tests": "4/8",
+    "Fetch Function Tests": "8/8"
   }
 }
