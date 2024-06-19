@@ -53,8 +53,25 @@ export const renderUsers = (userUl, users) => {
   }
 };
 
-export const renderPosts = () => {
+export const renderPosts = (postsUl , posts ) => {
+  postsUl.innerHTML =''
+  for(let post of posts ){
+    const li = document.createElement('li')
+    const h2 = document.createElement('h2')
+    const ptag = document.createElement('p')
+    h2.textContent = post.title 
+    ptag.textContent = post.body
+    li.append(h2, ptag)
+    postsUl.append(li)
+  }
 }
 
-export const renderNewUser = () => {
+export const renderNewUser = (newUserDiv, newUserInfo) => {
+  newUserDiv.innerHTML =''
+  const h2 = document.createElement('h2')
+  const p = document.createElement('p')
+  h2.textContent = newUserInfo.username
+  p.textContent = newUserInfo.email
+  newUserDiv.append(h2 , p)
+  
 }
