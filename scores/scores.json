@@ -3,7 +3,7 @@
     "App Tests": {
       "ApTe1": 1,
       "ApTe2": 1,
-      "ApTe3": 0,
+      "ApTe3": 1,
       "ApTe4": 0
     },
     "Render Functions Tests": {
@@ -72,8 +72,8 @@
     "src/fetch-functions.spec.js > Fetch Function Tests > createNewUser - returns the new user": "FeFuTe8"
   },
   "humanReadable": {
-    "App Tests": "2/4",
-    "finalTestScore": "FINAL SCORE: 18/20",
+    "App Tests": "3/4",
+    "finalTestScore": "FINAL SCORE: 19/20",
     "Render Functions Tests": "8/8",
     "Fetch Function Tests": "8/8"
   }
